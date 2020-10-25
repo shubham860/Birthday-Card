@@ -1,13 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
 import Home from './components/home';
-import Form from './components/form';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from "react-router-dom";
+import AllWishes from './components/allWishes';
 
 function App() {
   return (
-    <div className="App">
-        <Home/>
-    </div>
+      <Router>
+        <div className="App">
+            <Switch>
+            <Route path="/" exact>
+                <Home />
+            </Route>
+            <Route path="/all-wishes">
+                <AllWishes />
+            </Route>
+            </Switch>
+        </div>
+      </Router>
   );
 }
 

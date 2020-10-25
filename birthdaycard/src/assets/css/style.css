@@ -1,46 +1,576 @@
-.homeContainer{
-    background-image: url("../images/background.jpg");
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+@media (min-width: 1022px) {
+    .homeContainer{
+        background-image: url("../images/background-min.jpg");
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .wishHead{
+        font-size: 70px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255,255,255,0.8);
+        border-radius: 15px;
+        padding: 20px 20px 30px;
+    }
+
+    .wishHeadText{
+        font-family: 'Satisfy', cursive;
+        margin: 20px 0;
+    }
+
+    .desc{
+        font-size: 18px;
+        font-family: 'Balsamiq Sans', cursive;
+        color: #282c34;
+        text-align: left;
+        padding: 0 50px;
+        display: flex;
+    }
+
+    .divider{
+        height: 0px;
+        border: 1px solid #282c34;
+        border-radius: 10px;
+        width: 50px;
+        margin: 0 10px;
+        margin-top: 10px;
+    }
+
+    .formBtn{
+        font-size: 16px;
+        height: 45px;
+        background-color: black;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        padding: 0 30px;
+        font-family: 'Balsamiq Sans', cursive;
+        outline: 0;
+        text-decoration: none;
+    }
+
+    .formBtn:hover{
+        font-size: 16px;
+        height: 45px;
+        background-color: #282c34;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        padding: 0 30px;
+        font-family: 'Balsamiq Sans', cursive;
+        outline: 0;
+        text-decoration: none;
+    }
+
+    .formData{
+        border-radius: 10px;
+    }
+
+    .sideDiv{
+        background-image: url("../images/background-min.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+
+
+    .formContainer{
+        display: grid;
+        background-color: white;
+    }
+
+    input[type="text"], textarea, input[type="email"],input[type="password"]{
+        width: 400px;
+        border: none !important;
+        border-bottom: 2px solid black !important;
+        border-radius: 0;
+        margin-bottom: 20px;
+        outline: none !important;
+        text-decoration: none !important;
+        font-size: 16px;
+        font-family: 'Balsamiq Sans', cursive;
+    }
+
+    input:focus, textarea:focus{
+        width: 400px;
+        border: none !important;
+        border-bottom: 2px solid black !important;
+        border-radius: 0;
+        margin-bottom: 20px;
+        outline: none !important;
+        text-decoration: none !important;
+    }
+
+    .cards{
+        padding: 40px;
+    }
+
+    .messageHead{
+        font-family: 'Satisfy', cursive;
+        font-size: 60px;
+        margin: 20px 0px 0;
+    }
+
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        font-size: 16px;
+        font-family: 'Balsamiq Sans', cursive;
+    }
+
+
+    .submitBtn{
+        font-size: 16px;
+        height: 45px;
+        background-color: black;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        padding: 0 30px;
+        font-family: 'Balsamiq Sans', cursive;
+        outline: 0;
+        text-decoration: none;
+    }
+
+    .submitBtn:hover{
+        font-size: 16px;
+        height: 45px;
+        background-color: black;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        padding: 0 30px;
+        font-family: 'Balsamiq Sans', cursive;
+        outline: 0;
+        text-decoration: none;
+    }
+
+    .allposts{
+        display: grid;
+        justify-content: end;
+        position: absolute;
+        right: 5%;
+        top: 5%;
+    }
+
+    .allpostBtn{
+        font-size: 16px;
+        height: 45px;
+        background-color: black;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        padding: 0 30px;
+        display: grid;
+        align-items: center;
+        font-family: 'Balsamiq Sans', cursive;
+        outline: 0;
+        text-decoration: none;
+    }
+    .cardsData{
+        background-image: url("../images/background-min.jpg");
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .formContainers{
+        font-size: 70px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255,255,255,0.8);
+        border-radius: 15px;
+        padding: 40px 40px 40px;
+    }
+
+    .forms{
+        margin-top: 30px;
+        display: grid;
+        justify-content: center;
+    }
+
+    .passcode{
+        background-color: transparent !important;
+    }
+
+    .passcodeCheck{
+        color: red;
+        font-size: 15px;
+        position: absolute;
+        font-weight: 600;
+    }
+
+    .cardContainer{
+        background-color: white;
+        height: 300px;
+        margin-top: 20px;
+        border-radius: 5px;
+        padding: 40px;
+        color: black;
+    }
+
+    .name{
+        font-size: 22px;
+        font-weight: 500;
+        font-family: 'Satisfy', cursive;
+        color: black;
+        text-align: right;
+        margin-bottom: 5px;
+    }
+
+    .nickName{
+        font-size: 17px;
+        font-weight: 500;
+        font-family: 'Balsamiq Sans', cursive;
+        color: black;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .descr{
+        font-size: 17px;
+        font-weight: 500;
+        font-family: 'Balsamiq Sans', cursive;
+        color: black;
+        text-align: left;
+        margin-bottom: 5px;
+        text-align: left;
+        margin: 30px 0;
+    }
+
+    .btnGrp{
+        margin: 30px 0 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .previous{
+        height: 40px;
+        border: none;
+        font-size: 14px;
+        padding: 0 50px;
+        background-color: white;
+        color: black;
+        border-radius: 5px;
+        margin: 0 50px;
+        outline: 0 !important;
+        text-decoration: none;
+    }
+
+    .next{
+        height: 40px;
+        border: none;
+        font-size: 14px;
+        padding: 0 50px;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+        margin: 0 50px;
+        outline: 0 !important;
+        text-decoration: none;
+    }
 }
 
-.wishHead{
-    font-size: 70px;
+@media (max-width: 1022px) {
+    .homeContainer{
+        background-image: url("../images/background-min.jpg");
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .wishHead{
+        margin-top: 20px;
+        font-size: 40px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255,255,255,0.8);
+        border-radius: 15px;
+        padding: 20px 20px 30px;
+        max-width: 340px;
+        width: 100%;
+    }
+
+    .wishHeadText{
+        font-family: 'Satisfy', cursive;
+        margin: 20px 0;
+    }
+
+    .desc{
+        font-size: 18px;
+        font-family: 'Balsamiq Sans', cursive;
+        color: #282c34;
+        text-align: left;
+        padding: 0 10px;
+        display: flex;
+    }
+
+    .divider{
+        height: 0px;
+        border: 1px solid #282c34;
+        border-radius: 10px;
+        width: 50px;
+        margin: 0 10px;
+        margin-top: 10px;
+    }
+
+    .formBtn{
+        font-size: 16px;
+        height: 45px;
+        background-color: black;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        padding: 0 30px;
+        font-family: 'Balsamiq Sans', cursive;
+        outline: 0;
+        text-decoration: none;
+    }
+
+    .formBtn:hover{
+        font-size: 16px;
+        height: 45px;
+        background-color: #282c34;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        padding: 0 30px;
+        font-family: 'Balsamiq Sans', cursive;
+        outline: 0;
+        text-decoration: none;
+    }
+
+
+    .formData{
+        border-radius: 10px;
+    }
+
+    .sideDiv{
+        background-image: url("../images/background-min.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+
+
+    .formContainer{
+        display: grid;
+        background-color: white;
+    }
+
+    input[type="text"], textarea, input[type="email"], input[type="password"]{
+        border: none !important;
+        border-bottom: 2px solid black !important;
+        border-radius: 0;
+        margin-bottom: 20px;
+        outline: none !important;
+        text-decoration: none !important;
+        font-size: 16px;
+        font-family: 'Balsamiq Sans', cursive;
+    }
+
+
+    .cards{
+        padding: 40px;
+    }
+
+    .messageHead{
+        font-family: 'Satisfy', cursive;
+        font-size: 47px;
+        margin: 20px 0px 0;
+    }
+
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        font-size: 16px;
+        font-family: 'Balsamiq Sans', cursive;
+    }
+
+
+    .submitBtn{
+        font-size: 16px;
+        height: 45px;
+        background-color: black;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        padding: 0 30px;
+        font-family: 'Balsamiq Sans', cursive;
+        outline: 0;
+        text-decoration: none;
+    }
+
+    .submitBtn:hover{
+        font-size: 16px;
+        height: 45px;
+        background-color: black;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        padding: 0 30px;
+        font-family: 'Balsamiq Sans', cursive;
+        outline: 0;
+        text-decoration: none;
+    }
+    .allposts{
+        display: grid;
+        justify-content: end;
+        position: absolute;
+        right: 5%;
+        top: 5%;
+    }
+
+    .allpostBtn{
+        font-size: 16px;
+        height: 45px;
+        background-color: black;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        padding: 0 30px;
+        display: grid;
+        align-items: center;
+        font-family: 'Balsamiq Sans', cursive;
+        outline: 0;
+        text-decoration: none;
+    }
+
+    .cardsData{
+        background-image: url("../images/background-min.jpg");
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .formContainers{
+        font-size: 70px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255,255,255,0.8);
+        border-radius: 15px;
+        padding: 40px 40px 40px;
+        max-width: 300px;
+        width: 100%;
+    }
+
+    .forms{
+        margin-top: 30px;
+        display: grid;
+        justify-content: center;
+    }
+
+    .passcode{
+        background-color: transparent !important;
+    }
+
+    .passcodeCheck{
+        color: red;
+        font-size: 15px;
+        position: absolute;
+        font-weight: 600;
+    }
+
+    .cardContainer{
+        background-color: white;
+        height: 500px;
+    }
+
+
+    .cardContainer{
+        background-color: white;
+        height: 300px;
+        margin-top: 20px;
+        border-radius: 5px;
+        padding: 40px;
+        color: black;
+    }
+
+    .name{
+        font-size: 22px;
+        font-weight: 500;
+        font-family: 'Satisfy', cursive;
+        color: black;
+        text-align: right;
+        margin-bottom: 5px;
+    }
+
+    .nickName{
+        font-size: 17px;
+        font-weight: 500;
+        font-family: 'Balsamiq Sans', cursive;
+        color: black;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .descr{
+        font-size: 17px;
+        font-weight: 500;
+        font-family: 'Balsamiq Sans', cursive;
+        color: black;
+        text-align: left;
+        margin-bottom: 5px;
+        text-align: left;
+        margin: 30px 0;
+    }
+
+    .btnGrp{
+        margin: 30px 0 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .previous{
+        height: 40px;
+        border: none;
+        font-size: 14px;
+        padding: 0 50px;
+        background-color: white;
+        color: black;
+        border-radius: 5px;
+        margin: 0 50px;
+        outline: 0 !important;
+        text-decoration: none;
+    }
+
+    .next{
+        height: 40px;
+        border: none;
+        font-size: 14px;
+        padding: 0 50px;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+        margin: 0 50px;
+        outline: 0 !important;
+        text-decoration: none;
+    }
+}
+
+.allposts{
+    display: grid;
+    justify-content: end;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(255,255,255,0.8);
-    border-radius: 15px;
-    padding: 20px 20px 30px;
+    right: 5%;
+    top: 5%;
 }
 
-.wishHeadText{
-    font-family: 'Satisfy', cursive;
-    margin: 20px 0;
-}
-
-.desc{
-    font-size: 18px;
-    font-family: 'Balsamiq Sans', cursive;
-    color: #282c34;
-    text-align: left;
-    padding: 0 50px;
-    display: flex;
-}
-
-.divider{
-    height: 0px;
-    border: 1px solid #282c34;
-    border-radius: 10px;
-    width: 50px;
-    margin: 0 10px;
-    margin-top: 10px;
-}
-
-.formBtn{
+.allpostBtn{
     font-size: 16px;
     height: 45px;
     background-color: black;
@@ -48,46 +578,10 @@
     border-radius: 5px;
     color: white;
     padding: 0 30px;
-    font-family: 'Balsamiq Sans', cursive;
-    outline: 0;
-    text-decoration: none;
-}
-
-.formBtn: hover{
-    font-size: 16px;
-    height: 45px;
-    background-color: #282c34;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    padding: 0 30px;
-    font-family: 'Balsamiq Sans', cursive;
-    outline: 0;
-    text-decoration: none;
-}
-
-.formData{
-    border-radius: 10px;
-}
-
-.sideDiv{
-    background-image: url("../images/background.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-}
-
-
-.formContainer{
     display: grid;
-    background-color: white;
+    align-items: center;
+    font-family: 'Balsamiq Sans', cursive;
+    outline: 0 !important;
+    text-decoration: none !important;
 }
 
-input[type="text"]{
-    width: 400px;
-}
-
-.cards{
-    padding: 40px;
-}
